@@ -1,0 +1,64 @@
+{
+  "languages": [
+    {
+      "name": "Python",
+      "demand": "critical",
+      "trend": "growing"
+    },
+    {
+      "name": "SQL",
+      "demand": "important",
+      "trend": "stable"
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "PyTorch",
+      "demand": "critical",
+      "trend": "growing"
+    },
+    {
+      "name": "PyTorch3D",
+      "demand": "nice-to-have",
+      "trend": "growing"
+    },
+    {
+      "name": "scikit-learn",
+      "demand": "important",
+      "trend": "stable"
+    },
+    {
+      "name": "LightGBM",
+      "demand": "important",
+      "trend": "stable"
+    },
+    {
+      "name": "CatBoost",
+      "demand": "important",
+      "trend": "stable"
+    }
+  ],
+  "infrastructure": [],
+  "soft_skills": [
+    {
+      "name": "Analytical mindset",
+      "demand": "critical",
+      "trend": "growing"
+    },
+    {
+      "name": "Problem-solving",
+      "demand": "important",
+      "trend": "stable"
+    },
+    {
+      "name": "Communication",
+      "demand": "important",
+      "trend": "stable"
+    },
+    {
+      "name": "Independence",
+      "demand": "important",
+      "trend": "stable"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "learning_path": {
+    "foundation": [
+      {
+        "topics": [
+          "Python basics",
+          "SQL queries"
+        ],
+        "resources": [
+          {
+            "name": "Python Crash Course",
+            "type": "book"
+          },
+          {
+            "name": "Learn Python 3 on Codecademy",
+            "type": "course"
+          },
+          {
+            "name": "SQL for Data Science",
+            "type": "course"
+          },
+          {
+            "name": "SQL Cookbook",
+            "type": "book"
+          }
+        ],
+        "expected_milestone": "Able to write basic Python scripts and SQL queries"
+      }
+    ],
+    "practice": [
+      {
+        "topics": [
+          "Data manipulation with Pandas",
+          "Basic machine learning with Scikit-learn"
+        ],
+        "resources": [
+          {
+            "name": "Pandas Documentation",
+            "type": "documentation"
+          },
+          {
+            "name": "Python for Data Analysis",
+            "type": "book"
+          },
+          {
+            "name": "Introduction to Machine Learning with Python",
+            "type": "book"
+          },
+          {
+            "name": "Scikit-learn Documentation",
+            "type": "documentation"
+          }
+        ],
+        "expected_milestone": "Able to manipulate datasets and implement basic ML models"
+      }
+    ],
+    "portfolio": [
+      {
+        "topics": [
+          "Building a machine learning model",
+          "Data visualization"
+        ],
+        "resources": [
+          {
+            "name": "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow",
+            "type": "book"
+          },
+          {
+            "name": "Matplotlib Documentation",
+            "type": "documentation"
+          },
+          {
+            "name": "Seaborn Documentation",
+            "type": "documentation"
+          },
+          {
+            "name": "Data Visualization with Python",
+            "type": "course"
+          }
+        ],
+        "expected_milestone": "Create a machine learning model and visualize results"
+      }
+    ]
+  },
+  "gap_analysis": {
+    "quick_wins": [
+      "SQL optimization",
+      "Git basics"
+    ],
+    "long_term": [
+      "Deep learning with PyTorch",
+      "Cloud infrastructure"
+    ]
+  },
+  "portfolio_project": {
+    "title": "Personal Data Science Portfolio",
+    "description": "A project analyzing real datasets with ML models and visualizations.",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Scikit-learn",
+      "SQL"
+    ]
+  }
+}

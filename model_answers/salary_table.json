@@ -1,0 +1,81 @@
+{
+  "salary_table": {
+    "Junior": {
+      "Москва": {
+        "min": 60,
+        "median": 80,
+        "max": 100
+      },
+      "Регионы РФ": {
+        "min": 40,
+        "median": 60,
+        "max": 80
+      },
+      "Remote USD": {
+        "min": 1,
+        "median": 1.5,
+        "max": 2
+      }
+    },
+    "Middle": {
+      "Москва": {
+        "min": 100,
+        "median": 130,
+        "max": 160
+      },
+      "Регионы РФ": {
+        "min": 70,
+        "median": 100,
+        "max": 130
+      },
+      "Remote USD": {
+        "min": 2,
+        "median": 3,
+        "max": 4
+      }
+    },
+    "Senior": {
+      "Москва": {
+        "min": 160,
+        "median": 200,
+        "max": 240
+      },
+      "Регионы РФ": {
+        "min": 120,
+        "median": 160,
+        "max": 200
+      },
+      "Remote USD": {
+        "min": 4,
+        "median": 5.5,
+        "max": 7
+      }
+    },
+    "Lead": {
+      "Москва": {
+        "min": 240,
+        "median": 300,
+        "max": 360
+      },
+      "Регионы РФ": {
+        "min": 180,
+        "median": 240,
+        "max": 300
+      },
+      "Remote USD": {
+        "min": 7,
+        "median": 10,
+        "max": 12
+      }
+    }
+  },
+  "market_trend": {
+    "trend": "growing",
+    "justification": "Спрос на специалистов по Python и машинному обучению продолжает расти."
+  },
+  "top_employers": [
+    "Яндекс",
+    "Сбер",
+    "Тинькофф"
+  ]
+}

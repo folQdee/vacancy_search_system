@@ -1,0 +1,32 @@
+Extract skills from the following job description.
+
+For EACH skill:
+- Assign it to one of the categories:
+    - languages
+    - frameworks
+    - infrastructure
+    - soft_skills
+- Include the following properties:
+    - "name": skill name
+    - "demand": one of ["critical", "important", "nice-to-have"] indicating how essential the skill is
+    - "trend": one of ["growing", "stable", "declining"] indicating current market trend
+
+Return STRICT JSON ONLY in the following format:
+
+{
+  "languages": [
+    {
+      "name": "Python",
+      "demand": "critical",
+      "trend": "growing"
+    }
+  ],
+  "frameworks": [],
+  "infrastructure": [],
+  "soft_skills": []
+}
+
+Do not include any text outside the JSON.
+
+Job description:
+{text}
