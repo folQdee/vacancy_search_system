@@ -4,7 +4,7 @@
 
 ## Быстрый запуск
 
-1. зависимости:
+1. Зависимости:
    - pip install -r requirements.txt
 2. Создать '.env' на основе '.env.example' и заполнить:
    - 'OPENROUTER_KEY'
@@ -12,13 +12,10 @@
    - 'ROUTER_BASE_URL'
    - 'HH_URL'
 3. Запустить:
-   - 'python main.py --role "Backend Python Developer"'
+   - 'python main.py --role "Backend Python Developer"' 
    - 'python main.py --role "ML Engineer"'
    - 'python main.py --role "iOS Developer (Swift)"'
 
-Примеры ролей:
-- 'python main.py --role "ML Engineer"'
-- 'python main.py --role "iOS Developer (Swift)"'
 
 ## Агенты
 
@@ -50,10 +47,10 @@
 
 ## По файлам
 
-utils/api_search - функции для вытягивания информации и ее минимальной обработки
-utils/report_utils - функции для проверки форматов json в выходах у моделей
-prompts/ - промты для разных моделей
-model_answers/ - то, что выдали модели в последнем запуске
-examples/ - примеры отчетов
-models.py - 4 функции под каждого агента
-main.py - запуск системы, последовательный вызов агентов
+- utils/api_search - функции для вытягивания информации и ее минимальной обработки
+- utils/report_utils - функции для проверки форматов json в выходах у моделей
+- prompts/ - промты для разных моделей
+- model_answers/ - то, что выдали модели в последнем запуске
+- examples/ - примеры отчетов
+- models.py - 4 функции под каждого агента
+- main.py - запуск системы, последовательный вызов агентов
