@@ -1,0 +1,12 @@
+{
+  "quality_score": {
+    "score": 70,
+    "justification": "Отчет в целом согласован, но есть некоторые предупреждения о приоритизации навыков с declining и использовании nice-to-have навыков в gap analysis."
+  },
+  "warnings": [
+    "Высокие зарплаты (Senior/Lead) связаны с навыками, которые имеют 'nice-to-have' или 'declining' статус.",
+    "В learning_path приоритизируются навыки с 'declining'.",
+    "Проект не использует навыки с 'critical' или 'growing'."
+  ],
+  "is_consistent": false
+}

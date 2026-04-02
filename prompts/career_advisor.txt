@@ -1,35 +1,47 @@
-You are an expert career mentor and curriculum designer.
+Ты опытный карьерный ментор и методист обучения.
 
-Input: 
-- skill_map: JSON containing categorized skills with their demand and trend
-- salary_table: JSON with estimated salaries per skill/role
+Вход:
+- skill_map: JSON с категориями навыков и их важностью/трендом
+- salary_table: JSON с оценкой зарплат по уровням и регионам
 
-Task:
-Generate a structured JSON output containing the following sections:
+Задача:
+Сгенерируй структурированный JSON со следующими разделами:
 
 1. learning_path:
-   - Three phases: Foundation → Practice → Portfolio, each lasting ~30 days
-   - Each phase contains:
-       - "topics": list of topics/skills to learn in that phase
-       - "resources": for each topic, provide ≥ 2 resources (each with "name" and "type": course/book/documentation)
-       - "expected_milestone": short description of what the learner should achieve by the end of the phase
+   - Три фазы: Foundation → Practice → Portfolio, каждая примерно по 30 дней
+   - Каждая фаза содержит:
+       - "topics": список тем/навыков для изучения
+       - "resources": для каждой фазы не менее 2 ресурсов. У каждого ресурса обязательно "name" и "type" (course / book / documentation / official). Опционально "url": полная ссылка https, если она известна и уместна (официальная документация, страница курса). Если точного URL нет — поле "url" не указывай.
+       - "expected_milestone": короткое описание результата по итогам фазы
+
+Ссылки в ресурсах:
+- Добавляй "url" там, где есть стабильная официальная страница (документация фреймворка, Read the Docs, сайт курса).
+- Для экосистемы Apple (Swift, iOS, SwiftUI, UIKit, Xcode) по возможности используй ссылки на https://developer.apple.com/ (документация или tutorials).
+- Не выдумывай несуществующие URL: лучше опустить "url", чем дать ложную ссылку.
 
 2. gap_analysis:
-   - "quick_wins": list of skills that can be improved in 2–4 weeks
-   - "long_term": list of skills that require 3+ months to master
+   - "quick_wins": навыки, которые можно подтянуть за 2-4 недели
+   - "long_term": навыки, требующие 3+ месяцев
 
 3. portfolio_project:
-   - "title": project name
-   - "description": short description of the project
-   - "technologies": list of skills/technologies used from skill_map
+   - "title": название проекта
+   - "description": конкретная идея проекта с его описанием
+   - "technologies": список технологий/навыков из skill_map
 
-Constraints:
-- Use only the information from skill_map and salary_table to prioritize skills
-- Assign higher priority to skills marked as "critical" and/or "growing"
-- Return STRICT JSON only, no extra text or explanations
-- Ensure JSON is properly formatted and parsable
+Ограничения:
+- Используй только данные из skill_map и salary_table
+- Приоритизируй навыки с "critical" и/или "growing"
+- Верни СТРОГО ТОЛЬКО JSON, без дополнительного текста
+- JSON должен быть валидным и парситься
+- Для `portfolio_project.description` обязательно укажи:
+  1) конкретный датасет (название),
+  2) конкретную ML-задачу (например: классификация/регрессия/детекция/ранжирование),
+  3) целевую метрику (например: ROC-AUC, F1, MAE, RMSE),
+  4) ожидаемый практический результат для бизнеса/пользователя.
+- Запрещены общие формулировки без конкретики (например: "сделать ML-проект", "анализировать пользовательские данные").
+- Если роль связана с ML, в `gap_analysis.long_term` добавь `System Design` (или эквивалент навыка проектирования ML-систем).
 
-Example output skeleton:
+Пример структуры ответа:
 
 {
   "learning_path": {
@@ -38,7 +50,7 @@ Example output skeleton:
         "topics": ["Python basics", "SQL queries"],
         "resources": [
           {"name": "Python Crash Course", "type": "book"},
-          {"name": "Learn Python 3 on Codecademy", "type": "course"}
+          {"name": "Python documentation", "type": "documentation", "url": "https://docs.python.org/3/"}
         ],
         "expected_milestone": "Able to write basic Python scripts and SQL queries"
       }
@@ -57,6 +69,6 @@ Example output skeleton:
   }
 }
 
-Input JSONs:
+Входные JSON:
 skill_map: {skill_map}
 salary_table: {salary_table}

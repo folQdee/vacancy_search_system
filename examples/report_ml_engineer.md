@@ -1,0 +1,282 @@
+# Career Report
+
+Role: ML Engineer
+
+Generated at (Europe/Moscow): 2026-04-02T15:07:23.909887+03:00
+
+## skill_map
+
+```json
+{
+  "role": "ML Engineer",
+  "languages": [
+    {
+      "name": "Python",
+      "demand": "critical",
+      "trend": "growing"
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "PyTorch",
+      "demand": "critical",
+      "trend": "growing"
+    },
+    {
+      "name": "TensorFlow",
+      "demand": "important",
+      "trend": "growing"
+    },
+    {
+      "name": "FastAPI",
+      "demand": "important",
+      "trend": "growing"
+    },
+    {
+      "name": "Langchain",
+      "demand": "important",
+      "trend": "growing"
+    }
+  ],
+  "infrastructure": [
+    {
+      "name": "Docker",
+      "demand": "critical",
+      "trend": "growing"
+    },
+    {
+      "name": "Kubernetes",
+      "demand": "important",
+      "trend": "growing"
+    },
+    {
+      "name": "PostgreSQL",
+      "demand": "important",
+      "trend": "stable"
+    },
+    {
+      "name": "Redis",
+      "demand": "important",
+      "trend": "stable"
+    },
+    {
+      "name": "Qdrant",
+      "demand": "nice-to-have",
+      "trend": "growing"
+    }
+  ],
+  "soft_skills": [
+    {
+      "name": "Analytical Thinking",
+      "demand": "critical",
+      "trend": "growing"
+    },
+    {
+      "name": "Team Collaboration",
+      "demand": "important",
+      "trend": "stable"
+    },
+    {
+      "name": "Problem Solving",
+      "demand": "critical",
+      "trend": "growing"
+    }
+  ]
+}
+```
+
+## salary_table
+
+```json
+{
+  "salary_table": {
+    "Junior": {
+      "Москва": {
+        "min": 80,
+        "median": 100,
+        "max": 120
+      },
+      "Регионы РФ": {
+        "min": 60,
+        "median": 80,
+        "max": 100
+      },
+      "Remote USD": {
+        "min": 1.0,
+        "median": 1.5,
+        "max": 2.0
+      }
+    },
+    "Middle": {
+      "Москва": {
+        "min": 120,
+        "median": 150,
+        "max": 180
+      },
+      "Регионы РФ": {
+        "min": 100,
+        "median": 120,
+        "max": 150
+      },
+      "Remote USD": {
+        "min": 2.0,
+        "median": 3.0,
+        "max": 4.0
+      }
+    },
+    "Senior": {
+      "Москва": {
+        "min": 180,
+        "median": 220,
+        "max": 260
+      },
+      "Регионы РФ": {
+        "min": 150,
+        "median": 180,
+        "max": 220
+      },
+      "Remote USD": {
+        "min": 3.0,
+        "median": 4.0,
+        "max": 5.0
+      }
+    },
+    "Lead": {
+      "Москва": {
+        "min": 260,
+        "median": 300,
+        "max": 350
+      },
+      "Регионы РФ": {
+        "min": 220,
+        "median": 260,
+        "max": 300
+      },
+      "Remote USD": {
+        "min": 4.0,
+        "median": 5.0,
+        "max": 6.0
+      }
+    }
+  },
+  "market_trend": {
+    "trend": "growing",
+    "justification": "Спрос на специалистов в области машинного обучения продолжает расти, что связано с увеличением числа проектов и внедрением AI-технологий в бизнес."
+  },
+  "top_employers": [
+    "Aston",
+    "Циан",
+    "Marfatech",
+    "SkillStaff",
+    "Artificial Seed"
+  ]
+}
+```
+
+## advisor_table
+
+```json
+{
+  "learning_path": {
+    "foundation": [
+      {
+        "topics": [
+          "Python basics",
+          "Analytical Thinking",
+          "Problem Solving"
+        ],
+        "resources": [
+          {
+            "name": "Automate the Boring Stuff with Python",
+            "type": "book"
+          },
+          {
+            "name": "Python documentation",
+            "type": "documentation",
+            "url": "https://docs.python.org/3/"
+          }
+        ],
+        "expected_milestone": "Able to write basic Python scripts and apply analytical thinking to solve problems"
+      }
+    ],
+    "practice": [
+      {
+        "topics": [
+          "PyTorch",
+          "Docker",
+          "SQL basics"
+        ],
+        "resources": [
+          {
+            "name": "Deep Learning with PyTorch",
+            "type": "course",
+            "url": "https://pytorch.org/tutorials/"
+          },
+          {
+            "name": "Docker for Data Science",
+            "type": "course"
+          }
+        ],
+        "expected_milestone": "Able to build and deploy a simple ML model using PyTorch and Docker"
+      }
+    ],
+    "portfolio": [
+      {
+        "topics": [
+          "Machine Learning",
+          "Data Analysis",
+          "Model Evaluation"
+        ],
+        "resources": [
+          {
+            "name": "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow",
+            "type": "book"
+          },
+          {
+            "name": "ML documentation",
+            "type": "documentation",
+            "url": "https://scikit-learn.org/stable/documentation.html"
+          }
+        ],
+        "expected_milestone": "Develop a complete ML project with data analysis and model evaluation"
+      }
+    ]
+  },
+  "gap_analysis": {
+    "quick_wins": [
+      "SQL basics",
+      "Docker basics"
+    ],
+    "long_term": [
+      "Deep learning with PyTorch",
+      "System Design"
+    ]
+  },
+  "portfolio_project": {
+    "title": "Customer Churn Prediction",
+    "description": "Using the 'Telco Customer Churn' dataset, the project aims to predict customer churn using classification techniques. The target metric is F1 score, and the expected outcome is to provide actionable insights to reduce churn rates.",
+    "technologies": [
+      "Python",
+      "PyTorch",
+      "SQL",
+      "Docker"
+    ]
+  }
+}
+```
+
+## quality_table
+
+```json
+{
+  "quality_score": {
+    "score": 80,
+    "justification": "Отчёт в целом согласован, но есть некоторые предупреждения о приоритизации навыков и использовании технологий в проекте."
+  },
+  "warnings": [
+    "В learning_path приоритизируются навыки 'SQL basics', которые имеют статус 'important', но не являются 'critical' или 'growing'.",
+    "В portfolio_project используются навыки 'SQL', которые имеют статус 'important', но не являются 'critical' или 'growing'."
+  ],
+  "is_consistent": false
+}
+```

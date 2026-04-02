@@ -1,54 +1,71 @@
 {
+  "role": "iOS Developer (Swift)",
   "languages": [
     {
-      "name": "Python",
+      "name": "Swift",
       "demand": "critical",
       "trend": "growing"
     },
     {
-      "name": "SQL",
+      "name": "Objective-C",
       "demand": "important",
       "trend": "stable"
     }
   ],
   "frameworks": [
     {
-      "name": "PyTorch",
+      "name": "UIKit",
       "demand": "critical",
       "trend": "growing"
     },
     {
-      "name": "PyTorch3D",
-      "demand": "nice-to-have",
+      "name": "SwiftUI",
+      "demand": "important",
       "trend": "growing"
     },
     {
-      "name": "scikit-learn",
+      "name": "Combine",
+      "demand": "important",
+      "trend": "growing"
+    },
+    {
+      "name": "CocoaPods",
       "demand": "important",
       "trend": "stable"
     },
     {
-      "name": "LightGBM",
+      "name": "Firebase",
       "demand": "important",
-      "trend": "stable"
+      "trend": "growing"
     },
     {
-      "name": "CatBoost",
+      "name": "Clean Architecture",
       "demand": "important",
-      "trend": "stable"
+      "trend": "growing"
     }
   ],
-  "infrastructure": [],
+  "infrastructure": [
+    {
+      "name": "CI/CD",
+      "demand": "important",
+      "trend": "growing"
+    },
+    {
+      "name": "Docker",
+      "demand": "nice-to-have",
+      "trend": "growing"
+    }
+  ],
   "soft_skills": [
     {
-      "name": "Analytical mindset",
+      "name": "Team Collaboration",
       "demand": "critical",
       "trend": "growing"
     },
     {
-      "name": "Problem-solving",
-      "demand": "important",
-      "trend": "stable"
+      "name": "Problem Solving",
+      "demand": "critical",
+      "trend": "growing"
     },
     {
       "name": "Communication",
@@ -56,9 +73,9 @@
       "trend": "stable"
     },
     {
-      "name": "Independence",
+      "name": "Adaptability",
       "demand": "important",
-      "trend": "stable"
+      "trend": "growing"
     }
   ]
 }

@@ -3,103 +3,88 @@
     "foundation": [
       {
         "topics": [
-          "Python basics",
-          "SQL queries"
+          "Swift basics",
+          "UIKit fundamentals",
+          "Team Collaboration",
+          "Problem Solving"
         ],
         "resources": [
           {
-            "name": "Python Crash Course",
+            "name": "Swift Programming: The Big Nerd Ranch Guide",
             "type": "book"
           },
           {
-            "name": "Learn Python 3 on Codecademy",
-            "type": "course"
-          },
-          {
-            "name": "SQL for Data Science",
-            "type": "course"
-          },
-          {
-            "name": "SQL Cookbook",
-            "type": "book"
+            "name": "UIKit Documentation",
+            "type": "documentation",
+            "url": "https://developer.apple.com/documentation/uikit"
           }
         ],
-        "expected_milestone": "Able to write basic Python scripts and SQL queries"
+        "expected_milestone": "Able to create simple iOS applications using Swift and UIKit"
       }
     ],
     "practice": [
       {
         "topics": [
-          "Data manipulation with Pandas",
-          "Basic machine learning with Scikit-learn"
+          "SwiftUI basics",
+          "Firebase integration",
+          "CI/CD concepts"
         ],
         "resources": [
           {
-            "name": "Pandas Documentation",
-            "type": "documentation"
+            "name": "SwiftUI Essentials",
+            "type": "course",
+            "url": "https://developer.apple.com/tutorials/swiftui"
           },
           {
-            "name": "Python for Data Analysis",
-            "type": "book"
-          },
-          {
-            "name": "Introduction to Machine Learning with Python",
-            "type": "book"
-          },
-          {
-            "name": "Scikit-learn Documentation",
-            "type": "documentation"
+            "name": "Firebase Documentation",
+            "type": "documentation",
+            "url": "https://firebase.google.com/docs"
           }
         ],
-        "expected_milestone": "Able to manipulate datasets and implement basic ML models"
+        "expected_milestone": "Develop intermediate iOS applications with SwiftUI and integrate Firebase"
       }
     ],
     "portfolio": [
       {
         "topics": [
-          "Building a machine learning model",
-          "Data visualization"
+          "Clean Architecture",
+          "Combine framework",
+          "Advanced Problem Solving"
         ],
         "resources": [
           {
-            "name": "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow",
+            "name": "Clean Architecture in Swift",
             "type": "book"
           },
           {
-            "name": "Matplotlib Documentation",
-            "type": "documentation"
-          },
-          {
-            "name": "Seaborn Documentation",
-            "type": "documentation"
-          },
-          {
-            "name": "Data Visualization with Python",
-            "type": "course"
+            "name": "Combine Documentation",
+            "type": "documentation",
+            "url": "https://developer.apple.com/documentation/combine"
           }
         ],
-        "expected_milestone": "Create a machine learning model and visualize results"
+        "expected_milestone": "Build a well-structured iOS application using Clean Architecture and Combine"
       }
     ]
   },
   "gap_analysis": {
     "quick_wins": [
-      "SQL optimization",
-      "Git basics"
+      "Swift basics",
+      "UIKit fundamentals"
     ],
     "long_term": [
-      "Deep learning with PyTorch",
-      "Cloud infrastructure"
+      "SwiftUI",
+      "Firebase",
+      "System Design"
     ]
   },
   "portfolio_project": {
-    "title": "Personal Data Science Portfolio",
-    "description": "A project analyzing real datasets with ML models and visualizations.",
+    "title": "iOS Weather App",
+    "description": "An iOS application that predicts weather conditions using the OpenWeatherMap dataset, focusing on regression to predict temperature. The target metric is RMSE, aiming to provide accurate weather forecasts for users.",
     "technologies": [
-      "Python",
-      "Pandas",
-      "Scikit-learn",
-      "SQL"
+      "Swift",
+      "UIKit",
+      "SwiftUI",
+      "Firebase"
     ]
   }
 }

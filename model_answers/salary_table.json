@@ -2,80 +2,82 @@
   "salary_table": {
     "Junior": {
       "Москва": {
+        "min": 80,
+        "median": 100,
+        "max": 120
+      },
+      "Регионы РФ": {
         "min": 60,
         "median": 80,
         "max": 100
       },
-      "Регионы РФ": {
-        "min": 40,
-        "median": 60,
-        "max": 80
-      },
       "Remote USD": {
-        "min": 1,
-        "median": 1.5,
-        "max": 2
+        "min": 1.0,
+        "median": 1.2,
+        "max": 1.5
       }
     },
     "Middle": {
       "Москва": {
-        "min": 100,
-        "median": 130,
-        "max": 160
+        "min": 150,
+        "median": 180,
+        "max": 210
       },
       "Регионы РФ": {
-        "min": 70,
-        "median": 100,
-        "max": 130
+        "min": 120,
+        "median": 150,
+        "max": 180
       },
       "Remote USD": {
-        "min": 2,
-        "median": 3,
-        "max": 4
+        "min": 2.0,
+        "median": 2.3,
+        "max": 2.6
       }
     },
     "Senior": {
       "Москва": {
-        "min": 160,
-        "median": 200,
-        "max": 240
+        "min": 250,
+        "median": 300,
+        "max": 350
       },
       "Регионы РФ": {
-        "min": 120,
-        "median": 160,
-        "max": 200
+        "min": 200,
+        "median": 250,
+        "max": 300
       },
       "Remote USD": {
-        "min": 4,
-        "median": 5.5,
-        "max": 7
+        "min": 3.0,
+        "median": 3.5,
+        "max": 4.0
       }
     },
     "Lead": {
       "Москва": {
-        "min": 240,
-        "median": 300,
-        "max": 360
+        "min": 400,
+        "median": 450,
+        "max": 500
       },
       "Регионы РФ": {
-        "min": 180,
-        "median": 240,
-        "max": 300
+        "min": 350,
+        "median": 400,
+        "max": 450
       },
       "Remote USD": {
-        "min": 7,
-        "median": 10,
-        "max": 12
+        "min": 4.5,
+        "median": 5.0,
+        "max": 5.5
       }
     }
   },
   "market_trend": {
     "trend": "growing",
-    "justification": "Спрос на специалистов по Python и машинному обучению продолжает расти."
+    "justification": "Спрос на iOS разработчиков продолжает расти из-за увеличения числа мобильных приложений и новых технологий."
   },
   "top_employers": [
-    "Яндекс",
-    "Сбер",
-    "Тинькофф"
+    "АО «ОТП Банк» (JSC «OTP Bank»)",
+    "RWB (Wildberries & Russ)",
+    "Pyrus",
+    "TRADINGVIEW GEORGIA",
+    "Яндекс"
   ]
 }

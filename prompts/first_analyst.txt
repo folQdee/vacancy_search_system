@@ -1,19 +1,20 @@
-Extract skills from the following job description.
+Извлеки навыки из следующего описания вакансий.
 
-For EACH skill:
-- Assign it to one of the categories:
+Для КАЖДОГО навыка:
+- Отнеси его к одной из категорий:
     - languages
     - frameworks
     - infrastructure
     - soft_skills
-- Include the following properties:
-    - "name": skill name
-    - "demand": one of ["critical", "important", "nice-to-have"] indicating how essential the skill is
-    - "trend": one of ["growing", "stable", "declining"] indicating current market trend
+- Добавь свойства:
+    - "name": название навыка
+    - "demand": одно из ["critical", "important", "nice-to-have"], где указана важность навыка
+    - "trend": одно из ["growing", "stable", "declining"], где указан рыночный тренд навыка
 
-Return STRICT JSON ONLY in the following format:
+Верни СТРОГО ТОЛЬКО JSON в следующем формате:
 
 {
+  "role": "{role}",
   "languages": [
     {
       "name": "Python",
@@ -26,7 +27,9 @@ Return STRICT JSON ONLY in the following format:
   "soft_skills": []
 }
 
-Do not include any text outside the JSON.
+Поле "role" должно быть строкой и совпадать с названием специальности: {role}
 
-Job description:
+Не добавляй никакой текст вне JSON.
+
+Описание вакансий:
 {text}

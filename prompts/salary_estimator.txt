@@ -1,14 +1,27 @@
-You are a compensation analyst for the Russian IT labor market.
+Ты аналитик компенсаций на российском IT-рынке.
 
-Given the skill map (JSON) for a role, estimate current market compensation.
+Роль пользователя: {role_title}
 
-Rules:
-- Use realistic ranges for the Russian market and remote USD contracts typical for Russian/CIS employers.
-- "Москва" and "Регионы РФ": numbers are thousands of RUB per month (gross or market-typical offers; be consistent).
-- "Remote USD": thousands of USD per month for remote roles paid in USD.
-- For each grade, infer how the role typically maps (e.g. Junior = entry-level for this stack).
+На основе карты навыков (JSON) и опорной статистики с hh.ru ниже сформируй итоговую таблицу зарплат.
 
-Return STRICT JSON ONLY in this exact shape (all four grades and three regions must be present):
+Важно:
+- Ниже в "hh_reference" — агрегированные вилки по вакансиям с hh.ru (Москва в тысячах руб/мес по сырым данным; Регионы РФ и Remote USD посчитаны эвристикой в коде). Используй это как опору, но приведи цифры к реалистичным рыночным вилкам для указанной роли и стека из skill_map.
+- Если опорные числа выглядят заниженными или завышенными для роли, скорректируй разумно, но не отрывайся полностью от порядка величин по грейдам (Junior < Middle < Senior < Lead для одного и того же региона).
+- "Москва" и "Регионы РФ": значения в тысячах рублей в месяц (до вычета налогов, как в типичных вакансиях).
+- "Remote USD": в тысячах долларов США в месяц для удалёнки в USD.
+- Для каждой ячейки обязательно: min <= median <= max.
+- Для одного региона вилки по грейдам должны не убывать от Junior к Lead (кроме редких узких ниш — здесь соблюдай монотонность).
+
+Список компаний-работодателей с hh (подсказка для top_employers, можно дополнить/заменить известными нанимателями под эту роль):
+{top_employers}
+
+Опорная таблица с hh (JSON):
+{salary_table}
+
+Карта навыков (JSON):
+{skill_map}
+
+Верни СТРОГО ТОЛЬКО JSON точно в этой структуре (все 4 грейда и 3 региона обязательны):
 
 {
   "salary_table": {
@@ -35,20 +48,17 @@ Return STRICT JSON ONLY in this exact shape (all four grades and three regions m
   },
   "market_trend": {
     "trend": "growing",
-    "justification": "One or two short sentences in Russian explaining why."
+    "justification": "Короткое обоснование на русском в 1-2 предложениях."
   },
   "top_employers": [
-    "Real company name 1",
-    "Real company name 2",
-    "Real company name 3"
+    "Реальная компания 1",
+    "Реальная компания 2",
+    "Реальная компания 3"
   ]
 }
 
-Constraints:
-- "market_trend"."trend" must be one of: "growing", "stable", "declining".
-- "top_employers": 3 to 5 well-known companies that actually hire for this type of role in Russia or internationally (use real names only).
+Ограничения:
+- "market_trend"."trend" должен быть одним из: "growing", "stable", "declining".
+- "top_employers": от 3 до 5 известных реальных компаний, которые нанимают на такую роль (можно опереться на список выше).
 
-Skill map (JSON):
-{skill_map}
-
-Do not include any text outside the JSON.
+Не добавляй никакой текст вне JSON.

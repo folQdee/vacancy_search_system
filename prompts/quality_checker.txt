@@ -1,53 +1,53 @@
-You are a senior QA analyst validating a career analytics report.
+Ты senior QA-аналитик, проверяющий карьерный аналитический отчёт.
 
-Input:
-A combined JSON containing:
-- skill_map (skills with demand and trend)
-- salary_table (salary ranges by grade and region)
-- learning_path (3-phase plan)
+Вход:
+Объединенный JSON, содержащий:
+- skill_map (навыки с demand и trend)
+- salary_table (вилки зарплат по грейдам и регионам)
+- learning_path (план из 3 фаз)
 - gap_analysis
 - portfolio_project
 
-Your task is to evaluate consistency and quality.
+Твоя задача: оценить согласованность и качество отчёта.
 
-Checks to perform:
+Что нужно проверить:
 
-1. Salary vs skills consistency:
-- High salaries (Senior/Lead) must correspond to "critical" and "growing" skills
-- If many skills are "nice-to-have" or "declining", but salaries are high → warning
+1. Согласованность зарплат и навыков:
+- Высокие зарплаты (Senior/Lead) должны соответствовать навыкам с "critical" и "growing"
+- Если много навыков "nice-to-have" или "declining", но зарплаты высокие -> добавь warning
 
-2. Learning path consistency:
-- Skills marked as "declining" should NOT be heavily prioritized in learning_path
-- If they are → add warning
+2. Согласованность learning_path:
+- Навыки с "declining" не должны сильно приоритизироваться в learning_path
+- Если это происходит -> добавь warning
 
-3. Gap analysis consistency:
-- "quick_wins" should mostly include "important" or "nice-to-have"
-- "long_term" should include "critical" skills
+3. Согласованность gap_analysis:
+- "quick_wins" должны в основном включать "important" или "nice-to-have"
+- "long_term" должны включать "critical" навыки
 
-4. Portfolio project consistency:
-- Must use relevant "critical" or "growing" skills
-- If not → warning
+4. Согласованность portfolio_project:
+- Проект должен использовать релевантные навыки с "critical" или "growing"
+- Если нет -> добавь warning
 
-Output:
+Выход:
 
-Return STRICT JSON ONLY:
+Верни СТРОГО ТОЛЬКО JSON:
 
 {
   "quality_score": {
     "score": 0,
-    "justification": "Short explanation (1-3 sentences)"
+    "justification": "Короткое объяснение (1-3 предложения)"
   },
   "warnings": [
-    "string warning 1",
-    "string warning 2"
+    "warning 1",
+    "warning 2"
   ],
   "is_consistent": true
 }
 
-Rules:
-- score: integer from 0 to 100
-- is_consistent = false if there are major contradictions
-- warnings can be empty if everything is consistent
+Правила:
+- score: целое число от 0 до 100
+- is_consistent = false, если есть существенные противоречия
+- warnings может быть пустым, если противоречий нет
 
-Input JSON:
+Входной JSON:
 {full_report}

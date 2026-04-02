@@ -1,0 +1,270 @@
+{
+  "role": "iOS Developer (Swift)",
+  "generated_at": "2026-04-02T15:14:38.662228+03:00",
+  "skill_map": {
+    "role": "iOS Developer (Swift)",
+    "languages": [
+      {
+        "name": "Swift",
+        "demand": "critical",
+        "trend": "growing"
+      },
+      {
+        "name": "Objective-C",
+        "demand": "important",
+        "trend": "stable"
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "UIKit",
+        "demand": "critical",
+        "trend": "growing"
+      },
+      {
+        "name": "SwiftUI",
+        "demand": "important",
+        "trend": "growing"
+      },
+      {
+        "name": "Combine",
+        "demand": "important",
+        "trend": "growing"
+      },
+      {
+        "name": "CocoaPods",
+        "demand": "important",
+        "trend": "stable"
+      },
+      {
+        "name": "Firebase",
+        "demand": "important",
+        "trend": "growing"
+      },
+      {
+        "name": "Clean Architecture",
+        "demand": "important",
+        "trend": "growing"
+      }
+    ],
+    "infrastructure": [
+      {
+        "name": "CI/CD",
+        "demand": "important",
+        "trend": "growing"
+      },
+      {
+        "name": "Docker",
+        "demand": "nice-to-have",
+        "trend": "growing"
+      }
+    ],
+    "soft_skills": [
+      {
+        "name": "Team Collaboration",
+        "demand": "critical",
+        "trend": "growing"
+      },
+      {
+        "name": "Problem Solving",
+        "demand": "critical",
+        "trend": "growing"
+      },
+      {
+        "name": "Communication",
+        "demand": "important",
+        "trend": "stable"
+      },
+      {
+        "name": "Adaptability",
+        "demand": "important",
+        "trend": "growing"
+      }
+    ]
+  },
+  "salary_table": {
+    "salary_table": {
+      "Junior": {
+        "Москва": {
+          "min": 80,
+          "median": 100,
+          "max": 120
+        },
+        "Регионы РФ": {
+          "min": 60,
+          "median": 80,
+          "max": 100
+        },
+        "Remote USD": {
+          "min": 1.0,
+          "median": 1.2,
+          "max": 1.5
+        }
+      },
+      "Middle": {
+        "Москва": {
+          "min": 150,
+          "median": 180,
+          "max": 210
+        },
+        "Регионы РФ": {
+          "min": 120,
+          "median": 150,
+          "max": 180
+        },
+        "Remote USD": {
+          "min": 2.0,
+          "median": 2.3,
+          "max": 2.6
+        }
+      },
+      "Senior": {
+        "Москва": {
+          "min": 250,
+          "median": 300,
+          "max": 350
+        },
+        "Регионы РФ": {
+          "min": 200,
+          "median": 250,
+          "max": 300
+        },
+        "Remote USD": {
+          "min": 3.0,
+          "median": 3.5,
+          "max": 4.0
+        }
+      },
+      "Lead": {
+        "Москва": {
+          "min": 400,
+          "median": 450,
+          "max": 500
+        },
+        "Регионы РФ": {
+          "min": 350,
+          "median": 400,
+          "max": 450
+        },
+        "Remote USD": {
+          "min": 4.5,
+          "median": 5.0,
+          "max": 5.5
+        }
+      }
+    },
+    "market_trend": {
+      "trend": "growing",
+      "justification": "Спрос на iOS разработчиков продолжает расти из-за увеличения числа мобильных приложений и новых технологий."
+    },
+    "top_employers": [
+      "АО «ОТП Банк» (JSC «OTP Bank»)",
+      "RWB (Wildberries & Russ)",
+      "Pyrus",
+      "TRADINGVIEW GEORGIA",
+      "Яндекс"
+    ]
+  },
+  "advisor_table": {
+    "learning_path": {
+      "foundation": [
+        {
+          "topics": [
+            "Swift basics",
+            "UIKit fundamentals",
+            "Team Collaboration",
+            "Problem Solving"
+          ],
+          "resources": [
+            {
+              "name": "Swift Programming: The Big Nerd Ranch Guide",
+              "type": "book"
+            },
+            {
+              "name": "UIKit Documentation",
+              "type": "documentation",
+              "url": "https://developer.apple.com/documentation/uikit"
+            }
+          ],
+          "expected_milestone": "Able to create simple iOS applications using Swift and UIKit"
+        }
+      ],
+      "practice": [
+        {
+          "topics": [
+            "SwiftUI basics",
+            "Firebase integration",
+            "CI/CD concepts"
+          ],
+          "resources": [
+            {
+              "name": "SwiftUI Essentials",
+              "type": "course",
+              "url": "https://developer.apple.com/tutorials/swiftui"
+            },
+            {
+              "name": "Firebase Documentation",
+              "type": "documentation",
+              "url": "https://firebase.google.com/docs"
+            }
+          ],
+          "expected_milestone": "Develop intermediate iOS applications with SwiftUI and integrate Firebase"
+        }
+      ],
+      "portfolio": [
+        {
+          "topics": [
+            "Clean Architecture",
+            "Combine framework",
+            "Advanced Problem Solving"
+          ],
+          "resources": [
+            {
+              "name": "Clean Architecture in Swift",
+              "type": "book"
+            },
+            {
+              "name": "Combine Documentation",
+              "type": "documentation",
+              "url": "https://developer.apple.com/documentation/combine"
+            }
+          ],
+          "expected_milestone": "Build a well-structured iOS application using Clean Architecture and Combine"
+        }
+      ]
+    },
+    "gap_analysis": {
+      "quick_wins": [
+        "Swift basics",
+        "UIKit fundamentals"
+      ],
+      "long_term": [
+        "SwiftUI",
+        "Firebase",
+        "System Design"
+      ]
+    },
+    "portfolio_project": {
+      "title": "iOS Weather App",
+      "description": "An iOS application that predicts weather conditions using the OpenWeatherMap dataset, focusing on regression to predict temperature. The target metric is RMSE, aiming to provide accurate weather forecasts for users.",
+      "technologies": [
+        "Swift",
+        "UIKit",
+        "SwiftUI",
+        "Firebase"
+      ]
+    }
+  },
+  "quality_table": {
+    "quality_score": {
+      "score": 70,
+      "justification": "Отчет в целом согласован, но есть некоторые предупреждения о приоритизации навыков с declining и использовании nice-to-have навыков в gap analysis."
+    },
+    "warnings": [
+      "Высокие зарплаты (Senior/Lead) связаны с навыками, которые имеют 'nice-to-have' или 'declining' статус.",
+      "В learning_path приоритизируются навыки с 'declining'.",
+      "Проект не использует навыки с 'critical' или 'growing'."
+    ],
+    "is_consistent": false
+  }
+}

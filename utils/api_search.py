@@ -5,6 +5,9 @@ import requests
 import numpy as np
 from collections import defaultdict
 
+# 1 — Москва, 113 — Россия
+HH_AREA_MOSCOW = 1
+HH_AREA_RUSSIA = 113
 
 GRADE_KEYWORDS = {
     "Junior": ["junior", "intern"],
@@ -13,8 +16,8 @@ GRADE_KEYWORDS = {
     "Lead": ["lead", "head"]
 }
 
-
-def get_role(name, pages=2):
+# Возвращает список вакансий
+def get_role(name, pages=5):
     vacancies = []
     url = os.getenv("HH_URL")
 
@@ -22,7 +25,7 @@ def get_role(name, pages=2):
         params = {
             "text": name,
             "area": 1,
-            "per_page": 1,
+            "per_page": 10,
             "page": page,
         }
         res = requests.get(url, params=params).json()
@@ -30,7 +33,7 @@ def get_role(name, pages=2):
 
     return vacancies
 
-
+# полные описания вакансий
 def get_descriptions(items):
     texts = []
 
@@ -42,15 +45,15 @@ def get_descriptions(items):
 
     return texts
 
-
-def get_salary_data(query, pages=3):
+# собирает зарплаты по региону
+def get_salary_data(query, pages=10, area=HH_AREA_RUSSIA):
     url = "https://api.hh.ru/vacancies"
     salaries = []
 
     for page in range(pages):
         params = {
             "text": query,
-            "area": 113,  # Россия
+            "area": area,
             "per_page": 50,
             "page": page,
         }
@@ -69,7 +72,7 @@ def get_salary_data(query, pages=3):
 
     return salaries
 
-
+# min/median/max по зарплатам
 def compute_stats(salaries):
     if not salaries:
         return {"min": 0, "median": 0, "max": 0}
@@ -80,18 +83,18 @@ def compute_stats(salaries):
         "max": int(max(salaries) / 1000),
     }
 
-
-def get_salary_by_grade(role):
+# зп по грейдам
+def get_salary_by_grade(role, area=HH_AREA_RUSSIA):
     result = {}
 
     for grade, keywords in GRADE_KEYWORDS.items():
         query = f"{role} {' '.join(keywords)}"
-        salaries = get_salary_data(query)
+        salaries = get_salary_data(query, area=area)
         result[grade] = compute_stats(salaries)
 
     return result
 
-
+# топ работодателей по частоте вакансий
 def get_top_employers(query, pages=2):
     url = "https://api.hh.ru/vacancies"
     employers = {}
@@ -112,20 +115,23 @@ def get_top_employers(query, pages=2):
     top = sorted(employers.items(), key=lambda x: -x[1])
     return [e[0] for e in top[:5]]
 
+# итоговая таблица, чтобы её передать агенту
 def build_salary_table(role):
-    base = get_salary_by_grade(role)
+    base_moscow = get_salary_by_grade(role, area=HH_AREA_MOSCOW)
+    base_russia = get_salary_by_grade(role, area=HH_AREA_RUSSIA)
 
     table = {}
 
-    for grade, stats in base.items():
+    for grade in GRADE_KEYWORDS:
+        m = base_moscow[grade]
+        r = base_russia[grade]
         table[grade] = {
-            "Москва": stats,
-            "Регионы РФ": {
-                k: int(v * 0.7) for k, v in stats.items()
-            },
+            "Москва": m,
+            # Колонка по смыслу «ниже/шире Москвы»: отдельная выборка по area=113 (вся РФ по API hh).
+            "Регионы РФ": r,
             "Remote USD": {
-                k: int(v / 100) for k, v in stats.items()
-            }
+                k: round(m[k] / 100, 1) for k in m
+            },
         }
 
     return table

@@ -1,0 +1,283 @@
+# Career Report
+
+Role: Backend Python Developer
+
+Generated at (Europe/Moscow): 2026-04-02T14:56:00.107475+03:00
+
+## skill_map
+
+```json
+{
+  "role": "Backend Python Developer",
+  "languages": [
+    {
+      "name": "Python",
+      "demand": "critical",
+      "trend": "growing"
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Django",
+      "demand": "important",
+      "trend": "stable"
+    },
+    {
+      "name": "FastAPI",
+      "demand": "important",
+      "trend": "growing"
+    },
+    {
+      "name": "Flask",
+      "demand": "nice-to-have",
+      "trend": "stable"
+    }
+  ],
+  "infrastructure": [
+    {
+      "name": "Docker",
+      "demand": "important",
+      "trend": "growing"
+    },
+    {
+      "name": "Kubernetes",
+      "demand": "important",
+      "trend": "growing"
+    },
+    {
+      "name": "PostgreSQL",
+      "demand": "critical",
+      "trend": "stable"
+    },
+    {
+      "name": "Redis",
+      "demand": "important",
+      "trend": "growing"
+    },
+    {
+      "name": "RabbitMQ",
+      "demand": "nice-to-have",
+      "trend": "stable"
+    },
+    {
+      "name": "Kafka",
+      "demand": "nice-to-have",
+      "trend": "growing"
+    }
+  ],
+  "soft_skills": [
+    {
+      "name": "Communication",
+      "demand": "critical",
+      "trend": "stable"
+    },
+    {
+      "name": "Teamwork",
+      "demand": "important",
+      "trend": "stable"
+    },
+    {
+      "name": "Problem-solving",
+      "demand": "critical",
+      "trend": "growing"
+    }
+  ]
+}
+```
+
+## salary_table
+
+```json
+{
+  "salary_table": {
+    "Junior": {
+      "Москва": {
+        "min": 80,
+        "median": 100,
+        "max": 120
+      },
+      "Регионы РФ": {
+        "min": 60,
+        "median": 75,
+        "max": 90
+      },
+      "Remote USD": {
+        "min": 1.0,
+        "median": 1.5,
+        "max": 2.0
+      }
+    },
+    "Middle": {
+      "Москва": {
+        "min": 120,
+        "median": 150,
+        "max": 180
+      },
+      "Регионы РФ": {
+        "min": 90,
+        "median": 110,
+        "max": 130
+      },
+      "Remote USD": {
+        "min": 2.0,
+        "median": 3.0,
+        "max": 4.0
+      }
+    },
+    "Senior": {
+      "Москва": {
+        "min": 180,
+        "median": 230,
+        "max": 280
+      },
+      "Регионы РФ": {
+        "min": 130,
+        "median": 160,
+        "max": 200
+      },
+      "Remote USD": {
+        "min": 3.0,
+        "median": 4.0,
+        "max": 5.0
+      }
+    },
+    "Lead": {
+      "Москва": {
+        "min": 280,
+        "median": 350,
+        "max": 420
+      },
+      "Регионы РФ": {
+        "min": 200,
+        "median": 250,
+        "max": 300
+      },
+      "Remote USD": {
+        "min": 4.0,
+        "median": 5.0,
+        "max": 6.0
+      }
+    }
+  },
+  "market_trend": {
+    "trend": "growing",
+    "justification": "Спрос на разработчиков на Python продолжает расти, особенно в свете увеличения числа стартапов и проектов в области веб-разработки."
+  },
+  "top_employers": [
+    "Amir Zhoba",
+    "Flipper Devices",
+    "Т8",
+    "ФАЙВДЖЕН",
+    "Лидсфлоу"
+  ]
+}
+```
+
+## advisor_table
+
+```json
+{
+  "learning_path": {
+    "foundation": [
+      {
+        "topics": [
+          "Python basics",
+          "PostgreSQL basics",
+          "Django fundamentals"
+        ],
+        "resources": [
+          {
+            "name": "Automate the Boring Stuff with Python",
+            "type": "book"
+          },
+          {
+            "name": "Django Official Documentation",
+            "type": "documentation",
+            "url": "https://docs.djangoproject.com/en/stable/"
+          }
+        ],
+        "expected_milestone": "Able to write basic Python scripts, perform simple database operations, and create a basic Django application"
+      }
+    ],
+    "practice": [
+      {
+        "topics": [
+          "Advanced Python",
+          "Django REST framework",
+          "Docker basics"
+        ],
+        "resources": [
+          {
+            "name": "Python Crash Course",
+            "type": "book"
+          },
+          {
+            "name": "Docker Official Documentation",
+            "type": "documentation",
+            "url": "https://docs.docker.com/"
+          }
+        ],
+        "expected_milestone": "Able to build RESTful APIs with Django and containerize applications using Docker"
+      }
+    ],
+    "portfolio": [
+      {
+        "topics": [
+          "FastAPI",
+          "Redis integration",
+          "Kubernetes basics"
+        ],
+        "resources": [
+          {
+            "name": "FastAPI Official Documentation",
+            "type": "documentation",
+            "url": "https://fastapi.tiangolo.com/"
+          },
+          {
+            "name": "Kubernetes Official Documentation",
+            "type": "documentation",
+            "url": "https://kubernetes.io/docs/home/"
+          }
+        ],
+        "expected_milestone": "Able to deploy a full-stack application using FastAPI, Redis, and Kubernetes"
+      }
+    ]
+  },
+  "gap_analysis": {
+    "quick_wins": [
+      "SQL optimization",
+      "Git basics"
+    ],
+    "long_term": [
+      "Deep learning with PyTorch",
+      "System Design"
+    ]
+  },
+  "portfolio_project": {
+    "title": "E-commerce Product Recommendation System",
+    "description": "Develop a recommendation system using the 'Online Retail' dataset to predict customer preferences based on past purchases. The task involves classification to categorize products into recommended groups, with an expected accuracy of at least 85%. This will enhance user experience by providing personalized product suggestions.",
+    "technologies": [
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "Redis"
+    ]
+  }
+}
+```
+
+## quality_table
+
+```json
+{
+  "quality_score": {
+    "score": 70,
+    "justification": "Отчет в целом согласован, но есть некоторые несоответствия в learning_path и gap_analysis."
+  },
+  "warnings": [
+    "В learning_path приоритизируются навыки с 'declining', такие как 'Flask'.",
+    "В gap_analysis 'quick_wins' включают навыки, которые не являются 'important' или 'nice-to-have'."
+  ],
+  "is_consistent": false
+}
+```
